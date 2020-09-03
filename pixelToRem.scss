@@ -1,0 +1,10 @@
+/** 
+* This function will receive a pixel value as a number and convert it to rem
+* @param {number} pixel value
+* @return {rem}
+* @tutorial: font-size: pixelToRem(32);
+*/
+@function pixelToRem($pixel) {
+    $remBaseNumber: 16;
+    @return $pixel / $remBaseNumber * 1rem;
+}
